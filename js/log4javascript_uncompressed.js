@@ -4832,6 +4832,10 @@
 					queuedLoggingEvents.push(new QueuedGroupEnd());
 					checkAndAppend();
 				}
+            };
+
+		    this.getQueuedLoggingEvents = function() {
+		        return queuedLoggingEvents;
 			};
 
 			var appendQueuedLoggingEvents = function() {
