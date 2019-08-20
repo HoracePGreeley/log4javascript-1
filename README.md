@@ -1,9 +1,7 @@
-log4javascript
-==============
+# log4javascriptls
 
-http://log4javascript.org
+This is a fork of log4javascript npm package. See http://log4javascript.org for the original project.
 
-It contains the log4javascript lib prepared to be used with npm.
+## Browser compatibility
 
-Unfortunately, the npm package 1.4.15 still contains log4javascript 1.4.13.
-It was necessary to increase the version since the new package contains also TypeScript definitions. 
+This project follows the default settings of [Browserslist](https://github.com/browserslist/browserslist). As of August 2019, the probably oldest supported browser is Internet Explorer 11.
