@@ -1,7 +1,7 @@
 {
     "name": "log4javascriptls",
     "title": "log4javascript with localStoarge",
-    "version": "1.4.16",
+    "version": "1.4.17",
     "author": {
         "name": "Xaver Fleer",
         "email": "xaver.fleer@gmail.com"
