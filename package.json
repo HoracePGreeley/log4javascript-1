@@ -13,6 +13,7 @@
         "logging",
         "js"
     ],
+    "license": "Apache License, Version 2.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/xaverfleer/log4javascript-get-queued-logging-events"
