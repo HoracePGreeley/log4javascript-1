@@ -3376,6 +3376,10 @@
 '				}',
 '			}',
 '',
+'           function appendLocalStorage() {',
+'               evalCommand("localStorage");',
+'           }',
+'',
 '			var mainWindow = window;',
 '			var windowId = "log4javascriptConsoleWindow_" + new Date().getTime() + "_" + ("" + Math.random()).substr(2);',
 '',
@@ -4613,6 +4617,7 @@
 '					<input type="button" id="clearButton" value="Clear" onclick="clearLog()" class="button" title="Clear all log messages"  />',
 '					<input type="button" id="hideButton" value="Hide" onclick="hide()" class="hidden button" title="Hide the console" />',
 '					<input type="button" id="closeButton" value="Close" onclick="closeWindow()" class="hidden button" title="Close the window" />',
+'                   <input type="button" id="appendLocalStorage" value="Append localStorage" onclick="appendLocalStorage()" class="button" title="Append localStorage" />',
 '				</div>',
 '			</div>',
 '		</div>',
@@ -4827,6 +4832,10 @@
 					queuedLoggingEvents.push(new QueuedGroupEnd());
 					checkAndAppend();
 				}
+            };
+
+		    this.getQueuedLoggingEvents = function() {
+		        return queuedLoggingEvents;
 			};
 
 			var appendQueuedLoggingEvents = function() {
